@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Programming Language</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Download-and-Install-Python-3">Download and Install Python 3</a>
+        <a class="nav-link" href="#Getting-Started">Getting Started</a>
+        <a class="nav-link" href="#Hello-World">Hello World</a>
+        <a class="nav-link" href="#Python-Keywords">Python Keywords</a>
+        <a class="nav-link" href="#Statements">Statements</a>
+        <a class="nav-link" href="#Indentation">Indentation</a>
+        <a class="nav-link" href="#Variables">Variables</a>
+        <a class="nav-link" href="#Constants">Constants</a>
+        <a class="nav-link" href="#Operators">Operators</a>
+        <a class="nav-link" href="#Data-Types">Data-Types</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+        <a class="nav-link" href="#References">References</a>
+    </nav>
+
+    <main #id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is a high-level, general-purpose and a very popular programming language. Python programming language (latest Python 3) 
+                is being used in web development, Machine Learning applications, along with all cutting edge technology in Software Industry. 
+                Python Programming Language is very well suited for Beginners, also for experienced programmers with other programming languages
+                like C++ and Java.</p>
+            <p>Below are some facts about Python Programming Language:</p>
+            <ol>
+                <li>Python is currently the most widely used multi-purpose, high-level programming language.</li>
+                <li>Python allows programming in Object-Oriented and Procedural paradigms.</li>
+                <li>Free and Open Source: Redistributable</li>
+                <li>High-level Language: no need to take care about low-level details such as managing the memory used by the program.</li>
+                <li>Python programs generally are smaller than other programming languages like Java.</li>
+                <li>Python language is being used by almost all tech-giant companies like – Google, Amazon, Facebook, Instagram, Dropbox, Uber… etc.</li>
+                <li>The biggest strength of Python is huge collection of standard library.</li>
+            </ol>
+        </section>
+        <section class="main-section" id="Download-and-Install-Python-3">
+            <header>Download and Install Python 3</header>
+            <p>Here we will be discussing how to get the answer to all questions related to installing Python on Windows/Linux/macOS. Python 
+                was developed by Guido van Rossum in the early 1990s and its latest version is 3.10.4, we can simply call it Python3. </p>
+            <p>In this Python tutorial on Installation and Setup, you’ll see how to install Python on <a href="#Windows">Windows</a>, 
+                <a href="#Linux">Linux</a> and <a href="#macos">macOS</a>.</p>
+            <h2 id="Windows">How to install Python on Windows?</h2>
+            <p>Since windows don’t come with Python preinstalled, it needs to be installed explicitly. Follow the steps below:</p>
+            <ol>
+                <li>Step 1: First and foremost step is to open a browser and open <a href="https://www.python.org/downloads/windows/">
+                    https://www.python.org/downloads/windows/</a></li>
+                <li>Step 2: Underneath the Python Releases for Windows find the Latest Python 3 Release – Python 3.10.5</li>
+                <li>Step 3: On this page move to Files and click on Windows installer for 64-bit or for 32-bit.</li>
+                <li>Step 4: Run the Python Installer for how to install python on windows downloads folder (Make sure to mark <b>Add Python 
+                    3.10 to PATH</b>)</li>
+                <li>After installation is complete click on <b>Close</b>. Python is installed!</li>
+            </ol>
+            <h2 id="Linux">How to install Python on Linux?</h2>
+            <p>If Python is not already installed on your Linux system, or you want to install an updated version, follow the steps below:</p>
+            <ol>
+                <li>Step 1: First, install development packages required to build Python. The following command could be used to install 
+                    the latest version of Python on almost every Linux system: </li>
+                    <code>sudo apt-get install python3</code>
+                <li>Step 2: Visit the official Python website <a href="https://www.python.org/">https://www.python.org/</a> and download the 
+                    latest version of Python 3. After the download is complete, you hav a .tar.xz archive file (a "tarball") containing the 
+                    source code of Python.</li>
+                <li>Step 3: Extract the tarball either using the extractor application of your choice or the Linux tar command, for example:</li>
+                    <code>$ tar -xf Python-3.?.?.tar.xz</code>
+                <li>Step 4: Configure the script by executing it in your Linux terminal with:</li>
+                    <code>$ cd Python-3.*<br>./configure</code>
+                <li>Step 5: Start the build process. If you already have a version of Python installed on your system and you want to install 
+                    the new version alongside it, use this command:</li>
+                    <code>$ sudo make altinstall</code>
+                <li>Step 6: Verify the installation in your terminal:</li>
+                    <code>python3 --version</code>
+            </ol>
+            <p>If the output says Python 3.x, Python 3 has been successfully installed!</p>
+            <h2 id="macos">How to install Python on Windows?</h2>
+            <ol>
+                <li>To install python simple open Terminal app from Application -> Utilities and enter following command:</a></li>
+                    <code>brew install python3</code>
+                <li>After command processing is complete, Python’s version 3 would be installed on your mac.</li>
+                <li>To verify the installation enter following commands in your Terminal app:</li>
+                <code>python</code>
+                <code>pip3</code>
+            </ol>
+            <p>Python is installed on your computer!</p>
+        </section> 
+
+        <section class="main-section" id="Getting-Started">
+            <header>Getting Started</header>
+            <p>In order to start Python programming, we need to have an interpreter to interpret and run our programs. There are 
+                certain online interpreters like <a href="https://ide.geeksforgeeks.org/">https://ide.geeksforgeeks.org/</a> that 
+                can be used to run Python programs without installing an interpreter. Python IDLE is the Python Integration Development 
+                Environment (IDE) that comes with the Python distribution by default and helps you experiment with Python quickly 
+                in a trial-and-error manner. For each operating system:</p>
+            <ul>
+                <li><b>Windows:</b> There are many interpreters available freely to run Python scripts like IDLE (Integrated Development Environment) 
+                    that comes bundled with the Python software downloaded from <a href= "http://python.org/.">http://python.org/.</a></li>
+                <li><b>Linux:</b> Python comes preinstalled with popular Linux distros such as Ubuntu and Fedora. To check which version of Python 
+                    you’re running, type “python” in the terminal emulator. The interpreter should start and print the version number.</li>
+                <li><b>macOs:</b> Generally, Python 2.7 comes bundled with macOS. You’ll have to manually install Python 3 from 
+                    <a href= "http://python.org/.">http://python.org/.</a></li>
+            </ul>
+        </section> 
+
+        <section class="main-section" id="Hello-World">
+            <header>Hello World</header>
+            <p>The following shows you step by step how to launch the Python IDLE and use it to execute the Python code:</p>
+            <ol>
+                <li>First, launch the Python IDLE program. A new Python Shell window will display as follows:</li>
+                <img src="https://www.pythontutorial.net/wp-content/uploads/2020/10/Python-Hello-World-IDLE.png" 
+                    alt="Print screen of a Python 3.8.5 Shell ready to be used">
+                <li>Now, you can enter the Python code after the cursor >>> and press Enter to execute it:</li>
+                <code>>> print('Hello, World!')<br>Hello, World!</code>
+            </ol>
+        </section> 
+        <section class="main-section" id="Python-Keywords">
+            <header>Python Keywords</header>
+            <p>Keywords in Python are reserved words that can not be used as a variable name, function name, or any other identifier. 
+                Let's check each one:</p>
+            <ul>
+                <li><b>True: </b>This keyword is used to represent a boolean true. If a statement is true, “True” is printed.</li>
+                <li><b>False: </b>This keyword is used to represent a boolean false. If a statement is false, “False” is printed. </li>
+                <li><b>None: </b>This is a special constant used to denote a null value or a void. It’s important to remember, 0, any empty 
+                    container(e.g empty list) does not compute to None.</li>
+                <li><b>and: </b>This a logical operator in python. “and” Return the first false value. If not found return last.</li>
+                <li><b>or: </b>This a logical operator in python. “or” Return the first True value.if not found return last.</li>
+                <li><b>not: </b>This logical operator inverts the truth value.</li>
+                <li><b>in: </b>This keyword is used to check if a container contains a value. This keyword is also used to loop through the container.</li>
+                <li><b>is: </b>This keyword is used to test object identity, i.e to check if both the objects take the same memory location or not. </li>
+                <li><b>for: </b>This keyword is used to control flow and for looping.</li>
+                <li><b>while: </b>Has a similar working like “for”, used to control flow and for looping.</li>
+                <li><b>break: </b>“break” is used to control the flow of the loop. The statement is used to break out of the loop and passes the control 
+                    to the statement following immediately after loop.</li>
+                <li><b>continue: </b>“continue” is also used to control the flow of code. The keyword skips the current iteration of the loop but does 
+                    not end the loop.</li>
+                <li><b>if: </b>It is a control statement for decision making. Truth expression forces control to go in “if” statement block.</li>
+                <li><b>else: </b>It is a control statement for decision making. False expression forces control to go in “else” statement block.</li>
+                <li><b>elif: </b>It is a control statement for decision making. It is short for “else if“</li>
+                <li><b>def: </b>This keyword is used to declare user defined functions.</li>
+                <li><b>return: </b>This keyword is used to return from the function.</li>
+                <li><b>yield: </b>This keyword is used like return statement but is used to return a generator.</li>
+                <li><b>class: </b>This keyword is used to declare user defined classes.</li>
+                <li><b>with: </b>This keyword is used to wrap the execution of block of code within methods defined by context manager. This keyword is 
+                    not used much in day to day programming.</li>
+                <li><b>as: </b>keyword is used to create the alias for the module imported. i.e giving a new name to the imported module. E.g import math as mymath.</li>
+                <li><b>pass: </b>This is the null statement in python. Nothing happens when this is encountered. This is used to prevent indentation errors and used as 
+                    a placeholder.</li>
+                <li><b>lambda: </b>This keyword is used to make inline returning functions with no statements allowed internally. </li>
+                <li><b>import: </b>This statement is used to include a particular module into current program.</li>
+                <li><b>from: </b>Generally used with import, from is used to import particular functionality from the module imported.</li>
+                <li><b>try: </b>This keyword is used for exception handling, used to catch the errors in the code using the keyword except. Code in “try” block is 
+                    checked, if there is any type of error, except block is executed.</li>
+                <li><b>except: </b>As explained above, this works together with “try” to catch exceptions.</li>
+                <li><b>finally: </b>No matter what is result of the “try” block, block termed “finally” is always executed.</li>
+                <li><b>raise: </b>We can raise an exception explicitly with the raise keyword</li>
+                <li><b>assert: </b>This function is used for debugging purposes. Usually used to check the correctness of code. If a statement is evaluated to be true, 
+                    nothing happens, but when it is false, “AssertionError” is raised. One can also print a message with the error, separated by a comma.</li>
+                <li><b>del: </b>is used to delete a reference to an object. Any variable or list value can be deleted using del.</li>
+                <li><b>global: </b>This keyword is used to define a variable inside the function to be of a global scope.</li>
+                <li><b>non=local: </b>his keyword works similar to the global, but rather than global, this keyword declares a variable to point to variable 
+                    of outside enclosing function, in case of nested functions.</li>
+            </ul>
+        </section>  
+
+        <section class="main-section" id="Statements">
+            <header>Statements</header>
+            <p>Instructions written in the source code for execution are called statements. There are different types of statements in the Python programming language 
+                like Assignment statements, Conditional statements, Looping statements, etc. These all help the user to get the required output. For example, n = 50 
+                is an assignment statement.</p>
+                <p>Multi-Line Statements: Statements in Python can be extended to one or more lines using parentheses (), braces {}, square brackets [], semi-colon 
+                    (;) or continuation character slash (\).</p>
+        </section>
+
+        <section class="main-section" id="Indentation">
+            <header>Indentation</header>
+            <p>A block is a combination of all these statements. Block can be regarded as the grouping of statements for a specific purpose. Most of the programming 
+                languages like C, C++, and Java use braces { } to define a block of code. One of the distinctive features of Python is its use of indentation to 
+                highlight the blocks of code. Whitespace is used for indentation in Python. All statements with the same distance to the right belong to the same 
+                block of code. If a block has to be more deeply nested, it is simply indented further to the right. </p>
+            <p>To indicate a block of code in Python, you must indent each line of the block by the same whitespace.</p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>A variable is a named location used to store data in the memory. It is helpful to think of variables as a container that holds data that can be 
+                changed later in the program.</p>
+            <h3>Methods to assign values to variables</h3>
+            <ol>
+                <li>Method 1: Direct Initialisation Method</li>
+                <p>In this method, you will directly assign the value in python but in other programming languages like C, C++, you have to first initialise the 
+                    data type of variable. So, In Python, there is no need of explicit declaration  in variables as compare to using some other programming languages. 
+                    You can start using the variable right away.</p>
+                <code># initialising variable directly<br>a = 5<br># printing value of a<br>print("The value of a is: " + str(a))</code>
+                <p class="output">Output:</p> 
+                <code>The value of a is: 5</code>
+                <li>Method 2: Using Conditional Operator (?:)</li>
+                <p>This method is also called Ternary operators. Using Conditional Operator, you can write one line code in python. The conditional operator works 
+                    in a such way that first evaluates the condition, if  condition is true , first expression( True_value) will print else evaluates the second 
+                    expression(False_Value).</p>
+                <code># Initialising variables using Conditional Operator<br>a = 1 if 20 > 10 else 0<br># printing value of a<br>print("The value of a is: " + str(a))</code>
+                <p class="output">Output:</p> 
+                <code>The value of a is: 1</code>
+            </ol>
+            <p>Python is a type-inferred language, so you don't have to explicitly define the variable type. If you assign, for example, a value <span>apple.com</span> 
+                to the variable <span>website</span> it automatically knows that <span>apple.com</span> is a string and declares the <span>website</span> variable as a 
+                string.</p>
+        </section>
+
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <p>A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be 
+                changed later.</p>
+            <p>In Python, constants are usually declared and assigned in a module. Inside the module, constants are written in all capital letters and underscores 
+                separating the words. Example below:</p>
+            <code>import constant</code>
+            <code>PI = 3.14<br>GRAVITY = 9.8</code>
+            <code>print(constant.PI)<br>print(constant.GRAVITY)</code>
+            <p class="output">Output:</p> 
+            <code>3.14<br>9.8</code>
+            <p class="note"><b>Note:</b> In reality, we don't use constants in Python. Naming them in all capital letters is a convention to separate them from variables, 
+                however, it does not actually prevent reassignment.</p>
+        </section>
+        <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <p>Python Operators in general are used to perform operations on values and variables. These are standard symbols used for the purpose of logical and 
+                arithmetic operations. Following, we will look into different types of Python operators.</p>
+            <h2>Arithmetic Operators</h2>
+            <p>Arithmetic operators are used to performing mathematical operations like addition, subtraction, multiplication, and division.</p>
+            <table class="operators-table">
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                    <th>Syntax</th>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Addition: adds two operands</td>
+                    <td>x + y</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Subtraction: subtracts two operands</td>
+                    <td>x - y</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplication: multiplies two operands</td>
+                    <td>x * y</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Division (float): divides the first operand by the second</td>
+                    <td>x / y</td>
+                </tr>
+                <tr>
+                    <td>//</td>
+                    <td>Division (floor): divides the first operand by the second</td>
+                    <td>x // y</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Modulus: returns the remainder when the first operand is divided by the second</td>
+                    <td>x % y</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>Power: Returns first raised to power second</td>
+                    <td>x ** y</td>
+                </tr>
+            </table>
+
+            <h2>Comparison Operators</h2>
+            <p>Comparison of Relational operators compares the values. It either returns True or False according to the condition.</p>
+            <table class="operators-table">
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Greater than: True if the left operand is greater than the right</td>
+                </tr>
+                <tr>
+                    <td>&lt</td>
+                    <td>Less than: True if the left operand is less than the right</td>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>Equal to: True if both operands are equal</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Not equal to – True if operands are not equal</td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Greater than or equal to True if the left operand is greater than or equal to the right</td>
+                </tr>
+                <tr>
+                    <td>&lt=</td>
+                    <td>Less than or equal to True if the left operand is less than or equal to the right</td>
+                </tr>
+                <tr>
+                    <td>is</td>
+                    <td>x is the same as y</td>
+                </tr>
+                <tr>
+                    <td>is not</td>
+                    <td>x is not the same as y</td>
+                </tr>
+            </table>
+
+            <h2>Logical Operators</h2>
+            <p>Logical operators perform Logical AND, Logical OR, and Logical NOT operations. It is used to combine conditional statements.</p>
+            <table class="operators-table">
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>and</td>
+                    <td>Logical AND: True if both the operands are true</td>
+                </tr>
+                <tr>
+                    <td>or</td>
+                    <td>Logical OR: True if either of the operands is true </td>
+                </tr>
+                <tr>
+                    <td>not</td>
+                    <td>Logical NOT: True if the operand is false</td>
+                </tr>
+            </table>
+
+            <h2>Bitwise Operators</h2>
+            <p>Bitwise operators act on bits and perform the bit-by-bit operations. These are used to operate on binary numbers.</p>
+            <table class="operators-table">
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&</td>
+                    <td>Bitwise AND</td>
+                </tr>
+                <tr>
+                    <td>|</td>
+                    <td>Bitwise OR</td>
+                </tr>
+                <tr>
+                    <td>~</td>
+                    <td>Bitwise NOT</td>
+                </tr>
+                <tr>
+                    <td>^</td>
+                    <td>Bitwise XOR</td>
+                </tr>
+                <tr>
+                    <td>>></td>
+                    <td>Bitwise right shift</td>
+               </tr>
+                <tr>
+                    <td>&lt&lt</td>
+                    <td>Bitwise left shift</td>
+                </tr>
+            </table>
+
+            <h2>Assignment Operators</h2>
+            <p>Assignment operators are used to assign values to the variables.</p>
+            <table class="operators-table">
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>Assign value of right side of expression to left side operand</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>Add AND: Add right-side operand with left side operand and then assign to left operand</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>Subtract AND: Subtract right operand from left operand and then assign to left operand</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>Multiply AND: Multiply right operand with left operand and then assign to left operand</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>Divide AND: Divide left operand with right operand and then assign to left operand</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>Modulus AND: Takes modulus using left and right operands and assign the result to left operand</td>
+                </tr>
+                <tr>
+                    <td>//=</td>
+                    <td>Divide(floor) AND: Divide left operand with right operand and then assign the value(floor) to left operand</td>
+                </tr>
+                <tr>
+                    <td>**=</td>
+                    <td>Exponent AND: Calculate exponent(raise power) value using operands and assign value to left operand</td>
+                </tr>
+                <tr>
+                    <td>&=</td>
+                    <td>Performs Bitwise AND on operands and assign value to left operand</td>
+                </tr>
+                <tr>
+                    <td>|=</td>
+                    <td>Performs Bitwise OR on operands and assign value to left operand</td>
+                </tr>
+                <tr>
+                    <td>^=</td>
+                    <td>Performs Bitwise xOR on operands and assign value to left operand</td>
+                </tr>
+                <tr>
+                    <td>>>=</td>
+                    <td>Performs Bitwise right shift on operands and assign value to left operand</td>
+                </tr>
+                <tr>
+                    <td>&lt&lt=</td>
+                    <td>Performs Bitwise left shift on operands and assign value to left operand</td>
+                </tr>
+            </table>
+
+            <h2>Identity Operators</h2>
+            <p>Identity operators are used to check if two values are located on the same part of the memory. Two variables that are equal do not imply that they are 
+                identical.</p>
+            <table class="operators-table">
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>is</td>
+                    <td>True if the operands are identical </td>
+                </tr>
+                <tr>
+                    <td>is not</td>
+                    <td>True if the operands are not identical</td>
+                </tr>
+            </table>
+
+            <h2>Membership Operators</h2>
+            <p>Membership operators are used to test whether a value or variable is in a sequence.</p>
+            <table class="operators-table">
+                <tr>
+                    <th>Operator</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>in</td>
+                    <td>True if value is found in the sequence</td>
+                </tr>
+                <tr>
+                    <td>not in</td>
+                    <td>True if value is not found in the sequence</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="main-section" id="Data-Types">
+            <header>Data Types</header>
+            <p>Every value in Python has a datatype. Since everything is an object in Python programming, data types are actually classes and variables are instance 
+                (object) of these classes.</p>
+            <p>There are various data types in Python. Some of the important types are listed below.</p>
+            
+            <h2>Python Numbers</h2>
+            <p>Integers, floating point numbers and complex numbers fall under Python numbers category. They are defined as <span>int</span>, <span>float</span> and 
+                <span>complex</span> classes in Python.</p>
+            <p>We can use the <span>type()</span> function to know which class a variable or a value belongs to. Similarly, the <span>isinstance()</span> function 
+                is used to check if an object belongs to a particular class.</p>
+            <code>a = 5<br>print(a, "is of type", type(a))</code>
+            <code>a = 2.0<br>print(a, "is of type", type(a))</code>
+            <code>a = 1+2j<br>print(a, "is complex number?", isinstance(1+2j,complex))</code>
+            <p class="output">Output:</p> 
+            <code>5 is of type &ltclass 'int'><br>2.0 is of type &ltclass 'float'><br>(1+2j) is complex number? True</code>
+            <p>Integers can be of any length, it is only limited by the memory available.</p>
+            <p>A floating-point number is accurate up to 15 decimal places. Integer and floating points are separated by decimal points. <i>1</i> is an integer, 
+                <i>1.0</i> is a floating-point number.</p>
+            <p>Complex numbers are written in the form, <span>x + yj</span>, where <span>x</span> is the real part and <span>y</span> is the imaginary part.</p>
+
+            <h2>Python Lists</h2>
+            <p>Lists are one of the most powerful tools in python. They are just like the arrays declared in other languages. But the most powerful thing is that 
+                list need not be always homogeneous. A single list can contain strings, integers, as well as objects. Lists can also be used for implementing stacks 
+                and queues. Lists are mutable, i.e., they can be altered once declared.</p>
+            <p>Declaring a list is pretty straight forward. Items separated by commas are enclosed within brackets <span>[ ]</span>.The index starts from 0 in Python.</p>
+            <code>a = [1, 2.2, 'python']</code>
+        
+            <h2>Python Tuple</h2>
+            <p>A tuple is a sequence of immutable Python objects. Tuples are just like lists with the exception that tuples cannot be changed once declared. Tuples 
+                are usually faster than lists. It is defined within parentheses <span>()</span> where items are separated by commas.</p>
+            <code>t = (5,'program', 1+3j)</code>
+
+            <h2>Python Strings</h2>
+            <p>A string is a sequence of characters. It can be declared in python by using double-quotes. Strings are immutable, i.e., they cannot be changed.</p>
+            <code>s = "This is a string"<br>print(s)</code>
+            <code>s = '''A multiline<br>string'''<br>print(s)</code>
+            <p class="output">Output:</p> 
+            <code>This is a string<br>A multiline<br>string</code>
+
+            <h2>Python Set</h2>
+            <p>Set is an unordered collection of unique items. Set is defined by values separated by comma inside braces <span>{ }</span>. Items in a set are not 
+                ordered.</p>
+            <p>The major advantage of using a set, as opposed to a list, is that it has a highly optimized method for checking whether a specific element is 
+                contained in the set.</p>
+            <p>We can perform set operations like union, intersection on two sets. Sets have unique values. They eliminate duplicates.</p>
+            <p>Set items cannot be accessed by referring to an index, since sets are unordered the items has no index. But you can loop through the set items using a 
+                for loop, or ask if a specified value is present in a set, by using the in keyword.</p>
+            <code>a = {5,2,3,1,4}<br>print("a = ", a)</code>
+            <p class="output">Output:</p> 
+            <code>a =  {1, 2, 3, 4, 5}</code>
+
+            <h2>Python Dictionary</h2>
+            <p>Dictionary is an unordered collection of key-value pairs. It is generally used when we have a huge amount of data. Dictionaries are optimized for 
+                retrieving data. We must know the key to retrieve the value.</p>
+            <p>Dictionary keys are case sensitive, the same name but different cases of Key will be treated distinctly.</p>
+            <p>In Python, dictionaries are defined within braces <span>{}</span> with each item being a pair in the form <span>key:value</span>. Key and value 
+                can be of any type. We use key to retrieve the respective value. But not the other way around.</p>
+            <code>d = {1:'value','key':2}<br>print("d[1] = ", d[1])</code>
+            <p class="output">Output:</p> 
+            <code>d[1] =  value</code>
+
+            <h2>Python Arrays</h2>
+            <p>An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes 
+                it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of 
+                the array (generally denoted by the name of the array).</p>
+            <p>Array can be handled in Python by a module named array. They can be useful when we have to manipulate only a specific data type values. A user can 
+                treat lists as arrays. However, user cannot constraint the type of elements stored in a list. If you create arrays using the array module, all 
+                elements of the array must be of the same type.</p>
+            <p>In order to access the array items refer to the index number. Use the index operator <span>[ ]</span> to access an item in a array. The index 
+                must be an integer. </p>
+            <code># importing array module<br>import array as arr</code>
+            <code># array with int type<br>a = arr.array('i', [1, 2, 3, 4, 5, 6])</code>
+            <code># accessing element of array<br>print("Access element is: ", a[0])</code>
+            <p class="output">Output:</p> 
+            <code>Access element is:  1</code>
+
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Python Functions are very easy to write in python and all non-trivial programs will have functions. Function names have the same rules as variable names.</p>
+            <p>The function is a block of related statements designed to perform a computational, logical, or evaluative task.</p>
+            <p>The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for 
+                different inputs, we can do the function calls to reuse code contained in it over and over again. </p>
+
+            <h2>Creating a Function</h2>
+            <p>We can create a Python function using the <span>def</span> keyword.</p>
+            <code>def fun():<br>print("Hello, World!")</code>
+            <p>After creating a function we can call it by using the name of the function followed by parenthesis containing parameters of that particular function.</p>
+            <code>def fun():<br>print("Hello, World!")<br>fun()</code>
+            <p class="output">Output:</p> 
+            <code>Hello, World!</code>
+            <p class="note"><b>Note:</b> In python, the function definition should always be present before the function call. Otherwise, we will get an error.</p>
+
+            <h2>Arguments of a Function</h2>
+            <p>Arguments are the values passed inside the parenthesis of the function. A function can have any number of arguments separated by a comma.</p>
+            <p>Python supports various types of arguments that can be passed at the time of the function call such as: default, keyword or variable-length.</p>
+
+            <h2>Docstring</h2>
+            <p>The first string after the function is called the Document string or Docstring in short. This is used to describe the functionality of the function. 
+                The use of docstring in functions is optional but it is considered a good practice.</p>
+            <code>def greet(name):<br>"""<br>This function greets to<br>the person passed in as<br>a parameter<br>"""<br>print("Hello, " + name + ". Good morning!")</code>
+    
+            <h2>The return statement</h2>
+            <p>The function return statement is used to exit from a function and go back to the function caller and return the specified value or data item to the 
+                caller.</p>
+            <p>The return statement can consist of a variable, an expression, or a constant which is returned to the end of the function execution. If none of the 
+                above is present with the return statement a None object is returned.</p>
+            <code>def square_value(num):<br>return num**2</code>
+            <code>print(square_value(2))</code>
+            <p class="output">Output:</p> 
+            <code>4</code>
+
+            <h2>Scope and Lifetime of variables</h2>
+            <p>Scope of a variable is the portion of a program where the variable is recognized. Parameters and variables defined inside a function are not visible 
+                from outside the function. Hence, they have a local scope.</p>
+            <p>The lifetime of a variable is the period throughout which the variable exists in the memory. The lifetime of variables inside a function is as long 
+                as the function executes. They are destroyed once we return from the function. Hence, a function does not remember the value of a variable from its 
+                previous calls.</p>
+        
+            <h2>Anonymous functions</h2>
+            <p>In Python, an anonymous function means that a function is without a name. As we already know the def keyword is used to define the normal functions 
+                and the lambda keyword is used to create anonymous functions.</p>
+            <code>cube_v2 = lambda x : x*x*x<br>print(cube_v2(7))</code>
+            <p class="output">Output:</p> 
+            <code>343</code>
+
+            <h2>Python Function within Functions</h2>
+            <p>A function that is defined inside another function is known as the inner function or nested function. Nested functions are able to access variables 
+                of the enclosing scope. Inner functions are used so that they can be protected from everything happening outside the function.</p>
+        
+        </section>
+
+        <section class="main-section" id="References">
+            <header>References</header>
+            <ul>
+                <li>All the documentation in this page is taken from:</li>
+                    <ul>
+                        <li><a href="https://www.geeksforgeeks.org/python-programming-language/?ref=shm">GeeksforGeeks</a></li>
+                        <li><a href="https://www.programiz.com/python-programming">Programiz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+        
+
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    --primary-color: #3a2a45;
+    --title-color: #280e3b;
+    --background-color: #ded4e4; 
+    --link-color: #892dc6;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    color: var(--title-color);
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 250px;
+    width: 280px;
+    height: 100%;
+    border-right: 2px solid;
+    border-color: var(--primary-color);
+
+}
+
+#navbar-header {
+    margin: 2rem 2rem 0rem 2rem;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+#nav-list {
+    list-style-type: none;
+    font-size: 1.2em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    margin-top: 1.3rem;
+}
+
+#navbar li {
+    width: 100%;
+    padding: 0.7rem 0rem 0.7rem 2rem;
+}
+
+#navbar li:hover {
+    background-color: var(--background-color);
+}
+
+.nav-link {
+    text-decoration: none !important;
+    color: var(--primary-color) !important;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 280px;
+    padding: 32px;
+    line-height: 2rem;
+    margin-right: 1.5rem;
+}
+
+.section-header {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.main-section {
+    margin-bottom: 2rem;
+
+}
+
+p, h3 {
+    text-align: justify;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+
+}
+
+.list {
+    padding-left: 4rem;
+    margin-bottom: 1rem;
+}
+
+.list li, table, .code {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.list li {
+    list-style:square;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--background-color);
+}
+
+.bold {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.code {
+    background-color: var(--background-color);
+    width: 80%;
+    border-radius: 0.3rem;
+}
+
+code {
+    font-family: 'Joan', serif;
+    color: var(--primary-color);
+    display: block;
+    padding: 1.5rem;
+}
+
+.code-span {
+    display: block;
+}

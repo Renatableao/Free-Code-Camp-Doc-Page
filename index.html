@@ -4,103 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <title>Python Documentation</title>
-</head>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet"></head>
 <body>
     <nav id="navbar">
-        <header>Python Programming Language</header>
-        <a class="nav-link" href="#Introduction">Introduction</a>
-        <a class="nav-link" href="#Download-and-Install-Python-3">Download and Install Python 3</a>
-        <a class="nav-link" href="#Getting-Started">Getting Started</a>
-        <a class="nav-link" href="#Hello-World">Hello World</a>
-        <a class="nav-link" href="#Python-Keywords">Python Keywords</a>
-        <a class="nav-link" href="#Statements">Statements</a>
-        <a class="nav-link" href="#Indentation">Indentation</a>
-        <a class="nav-link" href="#Variables">Variables</a>
-        <a class="nav-link" href="#Constants">Constants</a>
-        <a class="nav-link" href="#Operators">Operators</a>
-        <a class="nav-link" href="#Data-Types">Data-Types</a>
-        <a class="nav-link" href="#Functions">Functions</a>
-        <a class="nav-link" href="#References">References</a>
+        <header id="navbar-header">Python Documentation</header>
+        <ul id="nav-list">
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Download-and-Install">Download and Install</a></li>
+            <li><a class="nav-link" href="#Getting-Started">Getting Started</a></li>
+            <li><a class="nav-link" href="#Hello-World">Hello World</a></li>
+            <li><a class="nav-link" href="#Python-Keywords">Python Keywords</a></li>
+            <li><a class="nav-link" href="#Statements">Statements</a></li>
+            <li><a class="nav-link" href="#Indentation">Indentation</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Constants">Constants</a></li>
+            <li><a class="nav-link" href="#Operators">Operators</a></li>
+            <li><a class="nav-link" href="#Data-Types">Data-Types</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#References">References</a></li>
+        </ul>
     </nav>
 
-    <main #id="main-doc">
+    <main id="main-doc">
         <section class="main-section" id="Introduction">
-            <header>Introduction</header>
+            <header class="section-header">Introduction</header>
             <p>Python is a high-level, general-purpose and a very popular programming language. Python programming language (latest Python 3) 
                 is being used in web development, Machine Learning applications, along with all cutting edge technology in Software Industry. 
                 Python Programming Language is very well suited for Beginners, also for experienced programmers with other programming languages
                 like C++ and Java.</p>
             <p>Below are some facts about Python Programming Language:</p>
-            <ol>
+            <ul class="list">
                 <li>Python is currently the most widely used multi-purpose, high-level programming language.</li>
                 <li>Python allows programming in Object-Oriented and Procedural paradigms.</li>
-                <li>Free and Open Source: Redistributable</li>
+                <li>Free and Open Source: Redistributable.</li>
                 <li>High-level Language: no need to take care about low-level details such as managing the memory used by the program.</li>
                 <li>Python programs generally are smaller than other programming languages like Java.</li>
                 <li>Python language is being used by almost all tech-giant companies like – Google, Amazon, Facebook, Instagram, Dropbox, Uber… etc.</li>
                 <li>The biggest strength of Python is huge collection of standard library.</li>
-            </ol>
+            </ul>
         </section>
-        <section class="main-section" id="Download-and-Install-Python-3">
-            <header>Download and Install Python 3</header>
+        <section class="main-section" id="Download-and-Install">
+            <header class="section-header">Download and Install</header>
             <p>Here we will be discussing how to get the answer to all questions related to installing Python on Windows/Linux/macOS. Python 
                 was developed by Guido van Rossum in the early 1990s and its latest version is 3.10.4, we can simply call it Python3. </p>
             <p>In this Python tutorial on Installation and Setup, you’ll see how to install Python on <a href="#Windows">Windows</a>, 
                 <a href="#Linux">Linux</a> and <a href="#macos">macOS</a>.</p>
-            <h2 id="Windows">How to install Python on Windows?</h2>
+            <h3 id="Windows">How to install Python on Windows?</h3>
             <p>Since windows don’t come with Python preinstalled, it needs to be installed explicitly. Follow the steps below:</p>
-            <ol>
-                <li>Step 1: First and foremost step is to open a browser and open <a href="https://www.python.org/downloads/windows/">
-                    https://www.python.org/downloads/windows/</a></li>
-                <li>Step 2: Underneath the Python Releases for Windows find the Latest Python 3 Release – Python 3.10.5</li>
+            <ul class="list">
+                <li>Step 1: First and foremost step is to open a browser and open <a target="_blank" href="https://www.python.org/downloads/windows/">
+                    https://www.python.org/downloads/windows/.</a></li>
+                <li>Step 2: Underneath the Python Releases for Windows find the Latest Python 3 Release – Python 3.10.5.</li>
                 <li>Step 3: On this page move to Files and click on Windows installer for 64-bit or for 32-bit.</li>
-                <li>Step 4: Run the Python Installer for how to install python on windows downloads folder (Make sure to mark <b>Add Python 
-                    3.10 to PATH</b>)</li>
-                <li>After installation is complete click on <b>Close</b>. Python is installed!</li>
-            </ol>
-            <h2 id="Linux">How to install Python on Linux?</h2>
+                <li>Step 4: Run the Python Installer for how to install python on windows downloads folder (Make sure to mark <span 
+                    class="bold">Add Python 3.10 to PATH</span>).</li>
+                <li>After installation is complete click on <span class="bold">Close</span>. Python is installed!</li>
+            </ul>
+            <h3 id="Linux">How to install Python on Linux?</h3>
             <p>If Python is not already installed on your Linux system, or you want to install an updated version, follow the steps below:</p>
-            <ol>
+            <ul class="list">
                 <li>Step 1: First, install development packages required to build Python. The following command could be used to install 
                     the latest version of Python on almost every Linux system: </li>
-                    <code>sudo apt-get install python3</code>
-                <li>Step 2: Visit the official Python website <a href="https://www.python.org/">https://www.python.org/</a> and download the 
-                    latest version of Python 3. After the download is complete, you hav a .tar.xz archive file (a "tarball") containing the 
+                    <div class="code">
+                        <code>sudo apt-get install python3</code>
+                    </div>
+                <li>Step 2: Visit the official Python website <a target="_blank" href="https://www.python.org/">https://www.python.org/</a> and download the 
+                    latest version of Python 3. After the download is complete, you hav a <span>.tar.xz</span> archive file (a "tarball") containing the 
                     source code of Python.</li>
                 <li>Step 3: Extract the tarball either using the extractor application of your choice or the Linux tar command, for example:</li>
-                    <code>$ tar -xf Python-3.?.?.tar.xz</code>
+                    <div class="code">
+                        <code>$ tar -xf Python-3.?.?.tar.xz</code>
+                    </div>
                 <li>Step 4: Configure the script by executing it in your Linux terminal with:</li>
-                    <code>$ cd Python-3.*<br>./configure</code>
+                    <div class="code">    
+                        <code>$ cd Python-3.*<span class="code-span">./configure</span></code>
+                    </div>
                 <li>Step 5: Start the build process. If you already have a version of Python installed on your system and you want to install 
                     the new version alongside it, use this command:</li>
-                    <code>$ sudo make altinstall</code>
+                    <div class="code">
+                        <code>$ sudo make altinstall</code>
+                    </div>
                 <li>Step 6: Verify the installation in your terminal:</li>
-                    <code>python3 --version</code>
-            </ol>
+                    <div class="code">
+                        <code>python3 --version</code>
+                    </div>
+            </ul>
             <p>If the output says Python 3.x, Python 3 has been successfully installed!</p>
-            <h2 id="macos">How to install Python on Windows?</h2>
-            <ol>
+            <h3 id="macos">How to install Python on macOS?</h3>
+            <ul class="list">
                 <li>To install python simple open Terminal app from Application -> Utilities and enter following command:</a></li>
-                    <code>brew install python3</code>
+                    <div class="code">
+                        <code>brew install python3</code>
+                    </div>
                 <li>After command processing is complete, Python’s version 3 would be installed on your mac.</li>
                 <li>To verify the installation enter following commands in your Terminal app:</li>
-                <code>python</code>
-                <code>pip3</code>
-            </ol>
+                <div class="code">
+                    <code>python<span class="code-span">pip3</span></code>
+                </div>
+            </ul>
             <p>Python is installed on your computer!</p>
         </section> 
 
         <section class="main-section" id="Getting-Started">
-            <header>Getting Started</header>
+            <header class="section-header">Getting Started</header>
             <p>In order to start Python programming, we need to have an interpreter to interpret and run our programs. There are 
-                certain online interpreters like <a href="https://ide.geeksforgeeks.org/">https://ide.geeksforgeeks.org/</a> that 
-                can be used to run Python programs without installing an interpreter. Python IDLE is the Python Integration Development 
+                certain online interpreters like <a target="_blank" href="https://ide.geeksforgeeks.org/">https://ide.geeksforgeeks.org/</a> 
+                that can be used to run Python programs without installing an interpreter. Python IDLE is the Python Integration Development 
                 Environment (IDE) that comes with the Python distribution by default and helps you experiment with Python quickly 
                 in a trial-and-error manner. For each operating system:</p>
-            <ul>
+            <ul class="list">
                 <li><b>Windows:</b> There are many interpreters available freely to run Python scripts like IDLE (Integrated Development Environment) 
-                    that comes bundled with the Python software downloaded from <a href= "http://python.org/.">http://python.org/.</a></li>
+                    that comes bundled with the Python software downloaded from <a  target="_blank"href= "http://python.org/.">http://python.org/.</a></li>
                 <li><b>Linux:</b> Python comes preinstalled with popular Linux distros such as Ubuntu and Fedora. To check which version of Python 
                     you’re running, type “python” in the terminal emulator. The interpreter should start and print the version number.</li>
                 <li><b>macOs:</b> Generally, Python 2.7 comes bundled with macOS. You’ll have to manually install Python 3 from 
@@ -109,21 +129,24 @@
         </section> 
 
         <section class="main-section" id="Hello-World">
-            <header>Hello World</header>
+            <header class="section-header">Hello World</header>
             <p>The following shows you step by step how to launch the Python IDLE and use it to execute the Python code:</p>
-            <ol>
+            <ul class="list">
                 <li>First, launch the Python IDLE program. A new Python Shell window will display as follows:</li>
                 <img src="https://www.pythontutorial.net/wp-content/uploads/2020/10/Python-Hello-World-IDLE.png" 
                     alt="Print screen of a Python 3.8.5 Shell ready to be used">
                 <li>Now, you can enter the Python code after the cursor >>> and press Enter to execute it:</li>
-                <code>>> print('Hello, World!')<br>Hello, World!</code>
-            </ol>
+                <div class="code">
+                    <code>>> print('Hello, World!')<span class="code-span">Hello, World!</span></code>
+                </div>
+            </ul>
         </section> 
+
         <section class="main-section" id="Python-Keywords">
-            <header>Python Keywords</header>
+            <header class="section-header">Python Keywords</header>
             <p>Keywords in Python are reserved words that can not be used as a variable name, function name, or any other identifier. 
                 Let's check each one:</p>
-            <ul>
+            <ul class="list">
                 <li><b>True: </b>This keyword is used to represent a boolean true. If a statement is true, “True” is printed.</li>
                 <li><b>False: </b>This keyword is used to represent a boolean false. If a statement is false, “False” is printed. </li>
                 <li><b>None: </b>This is a special constant used to denote a null value or a void. It’s important to remember, 0, any empty 
@@ -169,7 +192,7 @@
         </section>  
 
         <section class="main-section" id="Statements">
-            <header>Statements</header>
+            <header class="section-header">Statements</header>
             <p>Instructions written in the source code for execution are called statements. There are different types of statements in the Python programming language 
                 like Assignment statements, Conditional statements, Looping statements, etc. These all help the user to get the required output. For example, n = 50 
                 is an assignment statement.</p>
@@ -178,7 +201,7 @@
         </section>
 
         <section class="main-section" id="Indentation">
-            <header>Indentation</header>
+            <header class="section-header">Indentation</header>
             <p>A block is a combination of all these statements. Block can be regarded as the grouping of statements for a specific purpose. Most of the programming 
                 languages like C, C++, and Java use braces { } to define a block of code. One of the distinctive features of Python is its use of indentation to 
                 highlight the blocks of code. Whitespace is used for indentation in Python. All statements with the same distance to the right belong to the same 
@@ -186,11 +209,11 @@
             <p>To indicate a block of code in Python, you must indent each line of the block by the same whitespace.</p>
         </section>
         <section class="main-section" id="Variables">
-            <header>Variables</header>
+            <header class="section-header">Variables</header>
             <p>A variable is a named location used to store data in the memory. It is helpful to think of variables as a container that holds data that can be 
                 changed later in the program.</p>
             <h3>Methods to assign values to variables</h3>
-            <ol>
+            <ul class="list">
                 <li>Method 1: Direct Initialisation Method</li>
                 <p>In this method, you will directly assign the value in python but in other programming languages like C, C++, you have to first initialise the 
                     data type of variable. So, In Python, there is no need of explicit declaration  in variables as compare to using some other programming languages. 
@@ -205,14 +228,14 @@
                 <code># Initialising variables using Conditional Operator<br>a = 1 if 20 > 10 else 0<br># printing value of a<br>print("The value of a is: " + str(a))</code>
                 <p class="output">Output:</p> 
                 <code>The value of a is: 1</code>
-            </ol>
+            </ul>
             <p>Python is a type-inferred language, so you don't have to explicitly define the variable type. If you assign, for example, a value <span>apple.com</span> 
                 to the variable <span>website</span> it automatically knows that <span>apple.com</span> is a string and declares the <span>website</span> variable as a 
                 string.</p>
         </section>
 
         <section class="main-section" id="Constants">
-            <header>Constants</header>
+            <header class="section-header">Constants</header>
             <p>A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be 
                 changed later.</p>
             <p>In Python, constants are usually declared and assigned in a module. Inside the module, constants are written in all capital letters and underscores 
@@ -226,10 +249,10 @@
                 however, it does not actually prevent reassignment.</p>
         </section>
         <section class="main-section" id="Operators">
-            <header>Operators</header>
+            <header class="section-header">Operators</header>
             <p>Python Operators in general are used to perform operations on values and variables. These are standard symbols used for the purpose of logical and 
                 arithmetic operations. Following, we will look into different types of Python operators.</p>
-            <h2>Arithmetic Operators</h2>
+            <h3>Arithmetic Operators</h3>
             <p>Arithmetic operators are used to performing mathematical operations like addition, subtraction, multiplication, and division.</p>
             <table class="operators-table">
                 <tr>
@@ -274,7 +297,7 @@
                 </tr>
             </table>
 
-            <h2>Comparison Operators</h2>
+            <h3>Comparison Operators</h3>
             <p>Comparison of Relational operators compares the values. It either returns True or False according to the condition.</p>
             <table class="operators-table">
                 <tr>
@@ -315,7 +338,7 @@
                 </tr>
             </table>
 
-            <h2>Logical Operators</h2>
+            <h3>Logical Operators</h3>
             <p>Logical operators perform Logical AND, Logical OR, and Logical NOT operations. It is used to combine conditional statements.</p>
             <table class="operators-table">
                 <tr>
@@ -336,7 +359,7 @@
                 </tr>
             </table>
 
-            <h2>Bitwise Operators</h2>
+            <h3>Bitwise Operators</h3>
             <p>Bitwise operators act on bits and perform the bit-by-bit operations. These are used to operate on binary numbers.</p>
             <table class="operators-table">
                 <tr>
@@ -369,7 +392,7 @@
                 </tr>
             </table>
 
-            <h2>Assignment Operators</h2>
+            <h3>Assignment Operators</h3>
             <p>Assignment operators are used to assign values to the variables.</p>
             <table class="operators-table">
                 <tr>
@@ -430,7 +453,7 @@
                 </tr>
             </table>
 
-            <h2>Identity Operators</h2>
+            <h3>Identity Operators</h3>
             <p>Identity operators are used to check if two values are located on the same part of the memory. Two variables that are equal do not imply that they are 
                 identical.</p>
             <table class="operators-table">
@@ -448,7 +471,7 @@
                 </tr>
             </table>
 
-            <h2>Membership Operators</h2>
+            <h3>Membership Operators</h3>
             <p>Membership operators are used to test whether a value or variable is in a sequence.</p>
             <table class="operators-table">
                 <tr>
@@ -467,12 +490,12 @@
         </section>
 
         <section class="main-section" id="Data-Types">
-            <header>Data Types</header>
+            <header class="section-header">Data Types</header>
             <p>Every value in Python has a datatype. Since everything is an object in Python programming, data types are actually classes and variables are instance 
                 (object) of these classes.</p>
             <p>There are various data types in Python. Some of the important types are listed below.</p>
             
-            <h2>Python Numbers</h2>
+            <h3>Python Numbers</h3>
             <p>Integers, floating point numbers and complex numbers fall under Python numbers category. They are defined as <span>int</span>, <span>float</span> and 
                 <span>complex</span> classes in Python.</p>
             <p>We can use the <span>type()</span> function to know which class a variable or a value belongs to. Similarly, the <span>isinstance()</span> function 
@@ -487,26 +510,26 @@
                 <i>1.0</i> is a floating-point number.</p>
             <p>Complex numbers are written in the form, <span>x + yj</span>, where <span>x</span> is the real part and <span>y</span> is the imaginary part.</p>
 
-            <h2>Python Lists</h2>
+            <h3>Python Lists</h3>
             <p>Lists are one of the most powerful tools in python. They are just like the arrays declared in other languages. But the most powerful thing is that 
                 list need not be always homogeneous. A single list can contain strings, integers, as well as objects. Lists can also be used for implementing stacks 
                 and queues. Lists are mutable, i.e., they can be altered once declared.</p>
             <p>Declaring a list is pretty straight forward. Items separated by commas are enclosed within brackets <span>[ ]</span>.The index starts from 0 in Python.</p>
             <code>a = [1, 2.2, 'python']</code>
         
-            <h2>Python Tuple</h2>
+            <h3>Python Tuple</h3>
             <p>A tuple is a sequence of immutable Python objects. Tuples are just like lists with the exception that tuples cannot be changed once declared. Tuples 
                 are usually faster than lists. It is defined within parentheses <span>()</span> where items are separated by commas.</p>
             <code>t = (5,'program', 1+3j)</code>
 
-            <h2>Python Strings</h2>
+            <h3>Python Strings</h3>
             <p>A string is a sequence of characters. It can be declared in python by using double-quotes. Strings are immutable, i.e., they cannot be changed.</p>
             <code>s = "This is a string"<br>print(s)</code>
             <code>s = '''A multiline<br>string'''<br>print(s)</code>
             <p class="output">Output:</p> 
             <code>This is a string<br>A multiline<br>string</code>
 
-            <h2>Python Set</h2>
+            <h3>Python Set</h3>
             <p>Set is an unordered collection of unique items. Set is defined by values separated by comma inside braces <span>{ }</span>. Items in a set are not 
                 ordered.</p>
             <p>The major advantage of using a set, as opposed to a list, is that it has a highly optimized method for checking whether a specific element is 
@@ -518,7 +541,7 @@
             <p class="output">Output:</p> 
             <code>a =  {1, 2, 3, 4, 5}</code>
 
-            <h2>Python Dictionary</h2>
+            <h3>Python Dictionary</h3>
             <p>Dictionary is an unordered collection of key-value pairs. It is generally used when we have a huge amount of data. Dictionaries are optimized for 
                 retrieving data. We must know the key to retrieve the value.</p>
             <p>Dictionary keys are case sensitive, the same name but different cases of Key will be treated distinctly.</p>
@@ -528,7 +551,7 @@
             <p class="output">Output:</p> 
             <code>d[1] =  value</code>
 
-            <h2>Python Arrays</h2>
+            <h3>Python Arrays</h3>
             <p>An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes 
                 it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of 
                 the array (generally denoted by the name of the array).</p>
@@ -546,13 +569,13 @@
         </section>
 
         <section class="main-section" id="Functions">
-            <header>Functions</header>
+            <header class="section-header">Functions</header>
             <p>Python Functions are very easy to write in python and all non-trivial programs will have functions. Function names have the same rules as variable names.</p>
             <p>The function is a block of related statements designed to perform a computational, logical, or evaluative task.</p>
             <p>The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for 
                 different inputs, we can do the function calls to reuse code contained in it over and over again. </p>
 
-            <h2>Creating a Function</h2>
+            <h3>Creating a Function</h3>
             <p>We can create a Python function using the <span>def</span> keyword.</p>
             <code>def fun():<br>print("Hello, World!")</code>
             <p>After creating a function we can call it by using the name of the function followed by parenthesis containing parameters of that particular function.</p>
@@ -561,16 +584,16 @@
             <code>Hello, World!</code>
             <p class="note"><b>Note:</b> In python, the function definition should always be present before the function call. Otherwise, we will get an error.</p>
 
-            <h2>Arguments of a Function</h2>
+            <h3>Arguments of a Function</h3>
             <p>Arguments are the values passed inside the parenthesis of the function. A function can have any number of arguments separated by a comma.</p>
             <p>Python supports various types of arguments that can be passed at the time of the function call such as: default, keyword or variable-length.</p>
 
-            <h2>Docstring</h2>
+            <h3>Docstring</h3>
             <p>The first string after the function is called the Document string or Docstring in short. This is used to describe the functionality of the function. 
                 The use of docstring in functions is optional but it is considered a good practice.</p>
             <code>def greet(name):<br>"""<br>This function greets to<br>the person passed in as<br>a parameter<br>"""<br>print("Hello, " + name + ". Good morning!")</code>
     
-            <h2>The return statement</h2>
+            <h3>The return statement</h3>
             <p>The function return statement is used to exit from a function and go back to the function caller and return the specified value or data item to the 
                 caller.</p>
             <p>The return statement can consist of a variable, an expression, or a constant which is returned to the end of the function execution. If none of the 
@@ -580,33 +603,33 @@
             <p class="output">Output:</p> 
             <code>4</code>
 
-            <h2>Scope and Lifetime of variables</h2>
+            <h3>Scope and Lifetime of variables</h3>
             <p>Scope of a variable is the portion of a program where the variable is recognized. Parameters and variables defined inside a function are not visible 
                 from outside the function. Hence, they have a local scope.</p>
             <p>The lifetime of a variable is the period throughout which the variable exists in the memory. The lifetime of variables inside a function is as long 
                 as the function executes. They are destroyed once we return from the function. Hence, a function does not remember the value of a variable from its 
                 previous calls.</p>
         
-            <h2>Anonymous functions</h2>
+            <h3>Anonymous functions</h3>
             <p>In Python, an anonymous function means that a function is without a name. As we already know the def keyword is used to define the normal functions 
                 and the lambda keyword is used to create anonymous functions.</p>
             <code>cube_v2 = lambda x : x*x*x<br>print(cube_v2(7))</code>
             <p class="output">Output:</p> 
             <code>343</code>
 
-            <h2>Python Function within Functions</h2>
+            <h3>Python Function within Functions</h3>
             <p>A function that is defined inside another function is known as the inner function or nested function. Nested functions are able to access variables 
                 of the enclosing scope. Inner functions are used so that they can be protected from everything happening outside the function.</p>
         
         </section>
 
         <section class="main-section" id="References">
-            <header>References</header>
+            <header class="section-header">References</header>
             <ul>
                 <li>All the documentation in this page is taken from:</li>
                     <ul>
-                        <li><a href="https://www.geeksforgeeks.org/python-programming-language/?ref=shm">GeeksforGeeks</a></li>
-                        <li><a href="https://www.programiz.com/python-programming">Programiz</a></li>
+                        <li><a target="_blank" href="https://www.geeksforgeeks.org/python-programming-language/?ref=shm">GeeksforGeeks</a></li>
+                        <li><a target="_blank" href="https://www.programiz.com/python-programming">Programiz</a></li>
                     </ul>
                 </li>
             </ul>
